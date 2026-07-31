@@ -77,7 +77,10 @@ pub use widget as widgets;
 
 pub mod core;
 pub mod style;
-pub use iced_fonts;
+/// Icon-font generation macros used by the built-in Iced AW font.
+pub mod iced_fonts {
+    pub use iced_fonts_macros::{generate_icon_advanced_functions, generate_icon_functions};
+}
 
 /// Exports for all platforms that are not WASM32.
 mod platform {
