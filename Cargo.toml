@@ -78,7 +78,7 @@ iced_core = { version = "0.15.0-dev" }
 iced_widget = { version = "0.15.0-dev" }
 
 chrono = { version = "0.4.44", optional = true, features = ["wasmbind"] }
-iced_fonts = { version = "0.3.0", features = [
+iced_fonts = { git = "https://github.com/tsuza/iced_fonts", features = [
   "advanced_text",
 ]}
 num-format = { version = "0.4.4", optional = true }
